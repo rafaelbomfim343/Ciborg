@@ -1,0 +1,329 @@
+/*incio das formatações globais*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    text-decoration: none;    
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 16px;
+    margin-left: 3px;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;   
+    background-color: whitesmoke;
+}
+input{
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    padding-left: 7px;  
+    margin-top: 15px;  
+    border: none;     
+    border: 1px solid gainsboro;
+    border-radius: 3px;     
+    background-color: whitesmoke;
+}
+input:hover{
+    border: 1px solid gray;
+}
+button:hover{
+    color:whitesmoke;
+    background-color: hsla(194, 100%, 50%, 0.979);
+}
+span{
+    display: block;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    border-radius: 3px;
+    color: grey;
+    padding-left: 8px;
+    margin-top: 10px;
+    padding-top: 2.5px;
+    font-size: 12px;
+}
+textarea:focus, input:focus{
+    outline: none;       
+}
+
+/*fim das formatações globais*/
+/*--------------------------------------*/
+
+/*inico area do container*/
+#container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fim area do conatiner*/
+/*-----------------------------------------*/
+
+/*inicio area phone*/
+#box-imgP{
+    display: flex;
+    height: 630px;
+    width: 430px;
+    margin-top: 1.5em;
+    background-image: url(imagens/phone.png);
+    align-self: flex-start;
+}
+.capa{
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(154px,28px);    
+    max-width: 272px;
+    max-height: 550px;
+    overflow: hidden;    
+}
+.capa img{
+    object-fit: cover;
+    max-width: 250px ;
+    max-height: 542px;
+}
+
+/*fim area phone*/
+/*-------------------------------*/
+
+/*inicio area login*/
+/*----------------------------------*/
+#box-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+#box-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 400px;
+    width: 350px;
+    border: 1px solid gainsboro;
+    background-color: white;
+}
+.box-mainLogin{
+    display: block;
+    width: 275px; 
+    margin-right: 5px;        
+}
+#box-imgT{
+    display: flex;
+    height: 51px;
+    width: 175px; 
+    margin-bottom: 25px;
+    background-image: url(imagens/instagram.png);   
+}
+.senhaAlign{
+   margin-top: 3.5px;
+   margin-bottom: 15px;
+}
+.ESenha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 11px;        
+}
+.ESenha a{
+    color: hsla(194, 100%, 50%, 0.979);
+}
+.botão{
+    display: block;  
+    width: 285px; 
+    height: 30px;  
+    margin-top: 15px; 
+    background-color: lightblue;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+.coment{
+    font-weight: bold;
+    color: gray;
+    margin-top: 25px;    
+}
+.comentAlign{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;  
+}
+.line{
+    display: block;
+    border: 1px solid gainsboro;
+    height: 1px;
+    width: 100px;
+    margin-top: 20px;
+}
+.spriteAlign{
+    height: 40px;
+    width: 280px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    align-items: center;
+
+}
+.sprite{
+    display:inline-block;    
+    background-image: url(imagens/facebook.png);    
+    width: 16px;
+    height: 16px;      
+    position: relative;
+    margin-right: 10px;        
+}
+.nameSprite{ 
+    display: inline-block;    
+    font-weight: bold;
+    position: relative;
+    color: hsla(194, 100%, 50%, 0.979);
+}
+
+/*fim area login*/
+/*----------------------------------*/
+
+/*inicio area cadastro*/
+/*----------------------------------------*/
+#box-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 350px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    align-items: center;
+    font-size: 14px;
+}
+#box-cadastro a{
+    color: orange;
+    padding-left: 3px;    
+}
+/*fim area cadastro*/
+/*-------------------------------------------*/
+
+/*inicio area apps*/
+/*--------------------------------------------*/
+.getApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;  
+}
+#box-apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;       
+    height: auto;
+    width: auto;  
+    margin-top: 10px; 
+}
+#box-apps img{
+    max-width: 200px;
+    max-height: 40px;
+}
+
+/*fim area apps*/
+/*------------------------------------------*/
+
+/*inicio rodapé*/
+/*--------------------------------------------*/
+.footer1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 3px;
+}
+.footer3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;      
+}
+footer a{
+    color: gray;
+    font-size: 13px;
+}
+footer a:hover{
+    color:hsla(194, 100%, 50%, 0.979) ;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*fim rodapé*/
+/*---------------------------------------*/
+
+/*formatações de responsividade */
+/*--------------@mediaQuery--------------------*/
+@media (max-width: 870px){
+    #box-imgP{
+        display: none;        
+    }
+    #container{
+        max-width: 110%;        
+    }
+    #box-main{
+        padding-top: 50px; 
+        padding-bottom: 50px;       
+    }
+}
+@media(max-width: 420px ){
+    #container{
+        transform: translate(5px, 20px);
+    }
+    body{
+        background-color: white;
+    }
+    #box-login{
+        border: none;
+    }
+    #box-cadastro{
+        border: none;
+    }
+    .footer1{
+        display: block;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .footer2{
+        display: block;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .footer3{
+        display: block;
+        align-items: center;
+        padding-left: 150px;
+    }
+}
